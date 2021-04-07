@@ -1,5 +1,6 @@
 import { BingoService } from './../../../../services/bingo.service';
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-bingo-wrapper',
