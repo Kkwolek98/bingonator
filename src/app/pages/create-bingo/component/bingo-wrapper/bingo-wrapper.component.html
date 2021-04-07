@@ -1,0 +1,17 @@
+<div #bingo class="bingo">
+    <h2 contenteditable class="text-center">Bingo!</h2>
+    <div class="bingo-main">
+        <ng-container *ngFor="let x of [].constructor(5); let row = index">
+            <ng-container *ngFor="let y of [].constructor(5); let col = index">
+                <div class="bingo-img-cell font-48" *ngIf="row === 2 && col === 2; else editable">
+                    FREE
+                </div>
+                <ng-template #editable>
+                    <div class="bingo-editable-cell font-24" contenteditable>
+                        
+                    </div>
+                </ng-template>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>
